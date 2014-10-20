@@ -187,12 +187,7 @@ double predictRate(int user,int iterm){
     }
     return rate_avg[user]+sum1/sum2;
 }
-/**
-这分代码的问题
-1 求电影相似度时，对于矩阵中未打分的位置按0处理
-2 填充未评分电影时使用的是用户本身对其他电影的打分（使用相似度做加权）
-3 进行预测时，使用相似用户对该电影的打分的加权平均值。
-*/
+
 //测试
 int main(){
     string file="/home/orisun/DataSet/movie-lens-100k/u.data";
